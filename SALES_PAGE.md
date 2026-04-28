@@ -3,7 +3,6 @@
 ### Stop screening CVs. Start measuring capability.
 
 > The API that tells you **exactly how ready a candidate is for your role** — not based on what they claim, but on what their code actually proves.
-
 ---
 
 ## The Problem Every Outsourcing Company Knows
