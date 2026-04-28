@@ -1,0 +1,242 @@
+.hero {
+  min-height: 94vh;
+  background:
+    linear-gradient(115deg, rgba(251, 252, 248, 0.92) 0%, rgba(237, 244, 241, 0.9) 46%, rgba(255, 255, 255, 0.68) 100%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='800' viewBox='0 0 1200 800'%3E%3Cg fill='none' stroke='%2311856f' stroke-opacity='.16'%3E%3Cpath d='M20 190C190 70 286 298 472 178S762 86 920 212s180 20 260-80'/%3E%3Cpath d='M20 430c180-92 260 108 420 12s270-156 454-40 190 54 286-10'/%3E%3Cpath d='M80 650c150-70 270 30 390-40s250-180 420-80 210 120 300 24'/%3E%3C/g%3E%3Cg fill='%233267b1' fill-opacity='.22'%3E%3Ccircle cx='206' cy='146' r='5'/%3E%3Ccircle cx='471' cy='179' r='7'/%3E%3Ccircle cx='790' cy='142' r='5'/%3E%3Ccircle cx='1034' cy='221' r='7'/%3E%3Ccircle cx='330' cy='458' r='6'/%3E%3Ccircle cx='647' cy='351' r='5'/%3E%3Ccircle cx='966' cy='454' r='6'/%3E%3Ccircle cx='233' cy='642' r='5'/%3E%3Ccircle cx='788' cy='512' r='7'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: cover;
+  overflow: hidden;
+}
+
+.site-header {
+  width: min(1180px, calc(100% - 40px));
+  height: 76px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.brand {
+  font-weight: 800;
+  font-size: 1.1rem;
+}
+
+.brand-mark {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  color: var(--white);
+  background: var(--charcoal);
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.header-cta,
+.secondary-btn {
+  min-height: 42px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 0 16px;
+  background: rgba(255, 255, 255, 0.72);
+  font-weight: 700;
+}
+
+.hero-grid {
+  min-height: calc(94vh - 116px);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(380px, 0.84fr);
+  gap: 56px;
+  align-items: center;
+  padding: 30px 0 40px;
+}
+
+.hero-copy h1 {
+  max-width: 780px;
+  margin: 0;
+  font-size: clamp(3rem, 7vw, 6.7rem);
+  line-height: 0.92;
+  letter-spacing: 0;
+}
+
+.hero-lede {
+  max-width: 650px;
+  color: #43545f;
+  font-size: 1.17rem;
+  line-height: 1.65;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 30px 0;
+}
+
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  max-width: 590px;
+  margin: 0;
+}
+
+.hero-stats div {
+  padding: 15px;
+  border: 1px solid rgba(96, 112, 124, 0.22);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.66);
+}
+
+.hero-stats dt {
+  color: var(--muted);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.hero-stats dd {
+  margin: 7px 0 0;
+  font-size: 1.55rem;
+  font-weight: 900;
+}
+
+.hero-visual {
+  min-height: 560px;
+  padding: 18px;
+}
+
+.visual-toolbar,
+.code-window > div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.visual-toolbar span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--rose);
+}
+
+.visual-toolbar span:nth-child(2) {
+  background: var(--amber);
+}
+
+.visual-toolbar span:nth-child(3) {
+  background: var(--teal);
+}
+
+.score-orbit {
+  position: relative;
+  min-height: 285px;
+  margin: 22px 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background:
+    radial-gradient(circle at center, rgba(17, 133, 111, 0.14), transparent 34%),
+    linear-gradient(135deg, #f9fbf8, #edf4f1);
+}
+
+.score-core,
+.orbit-node {
+  position: absolute;
+  border-radius: 8px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  box-shadow: 0 10px 28px rgba(16, 32, 39, 0.11);
+}
+
+.score-core {
+  inset: 50% auto auto 50%;
+  width: 132px;
+  height: 132px;
+  transform: translate(-50%, -50%);
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.score-core span,
+.demo-score span {
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.score-core strong {
+  display: block;
+  font-size: 2.4rem;
+}
+
+.orbit-node {
+  padding: 10px 12px;
+  font-size: 0.85rem;
+  font-weight: 800;
+}
+
+.node-a {
+  top: 30px;
+  left: 42px;
+}
+
+.node-b {
+  right: 28px;
+  top: 98px;
+}
+
+.node-c {
+  left: 82px;
+  bottom: 34px;
+}
+
+.capability-list {
+  display: grid;
+  gap: 14px;
+}
+
+.capability-row div:first-child,
+.formula-row,
+.demo-bars label,
+.plan-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.meter,
+.demo-bars i,
+.formula-row i {
+  display: block;
+  height: 9px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #e5ecef;
+}
+
+.meter i,
+.demo-bars b,
+.formula-row b {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--teal);
+}
+
+.next-peek {
+  min-height: 62px;
+  display: flex;
+  align-items: center;
+  color: var(--muted);
+  font-weight: 700;
+}

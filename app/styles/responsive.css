@@ -1,0 +1,132 @@
+@media (max-width: 980px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hero-grid,
+  .two-column,
+  .evidence-grid,
+  .ucg-grid,
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-visual,
+  .demo-panel {
+    position: static;
+    min-height: auto;
+  }
+
+  .use-case-grid,
+  .endpoint-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .pricing-card.featured {
+    transform: none;
+  }
+}
+
+@media (max-width: 680px) {
+  .shell,
+  .site-header {
+    width: min(100% - 28px, 1180px);
+  }
+
+  .site-header {
+    height: 66px;
+  }
+
+  .header-cta {
+    display: none;
+  }
+
+  .hero-grid {
+    gap: 26px;
+    padding-top: 18px;
+  }
+
+  .hero-copy h1 {
+    font-size: 3.1rem;
+  }
+
+  .hero-stats,
+  .table-head,
+  .table-row,
+  .demo-columns,
+  .layers-table div,
+  .pillar-grid,
+  .use-case-grid,
+  .endpoint-list {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-visual {
+    padding: 12px;
+  }
+
+  .score-orbit {
+    min-height: 245px;
+  }
+
+  .orbit-node {
+    font-size: 0.74rem;
+  }
+
+  .node-a {
+    left: 12px;
+  }
+
+  .node-b {
+    right: 12px;
+  }
+
+  .node-c {
+    left: 28px;
+  }
+
+  .section,
+  .band {
+    padding: 66px 0;
+  }
+
+  .table-head {
+    display: none;
+  }
+
+  .table-row {
+    padding: 8px 0;
+  }
+
+  .table-row > * {
+    padding: 10px 14px;
+  }
+
+  .step-card {
+    grid-template-columns: 1fr;
+  }
+
+  .transfer-row,
+  .formula-row {
+    grid-template-columns: 1fr;
+  }
+
+  .transfer-row b {
+    text-align: left;
+  }
+
+  .formula-row i {
+    width: 100%;
+  }
+
+  .pricing-card p {
+    min-height: auto;
+  }
+
+  .addon,
+  .cta-content,
+  .footer .shell {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

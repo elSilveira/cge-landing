@@ -1,0 +1,465 @@
+.section,
+.band {
+  padding: 96px 0;
+}
+
+.band {
+  background: var(--white);
+}
+
+.section-heading {
+  max-width: 760px;
+  margin-bottom: 34px;
+}
+
+.section-heading h2,
+.cta-content h2 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.section-heading p,
+.cta-content p {
+  color: var(--muted);
+  font-size: 1.04rem;
+  line-height: 1.7;
+}
+
+.comparison-table {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.table-head,
+.table-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.35fr;
+}
+
+.table-head {
+  background: var(--charcoal);
+  color: var(--white);
+  font-size: 0.82rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.table-head span,
+.table-row > * {
+  padding: 18px;
+}
+
+.table-row {
+  background: var(--white);
+}
+
+.table-row + .table-row {
+  border-top: 1px solid var(--line);
+}
+
+.table-row span {
+  color: var(--muted);
+}
+
+.two-column {
+  display: grid;
+  grid-template-columns: minmax(0, 1.03fr) minmax(360px, 0.72fr);
+  gap: 42px;
+  align-items: start;
+}
+
+.step-list,
+.endpoint-list,
+.use-case-grid,
+.pricing-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.step-card {
+  display: grid;
+  grid-template-columns: 46px 1fr;
+  gap: 15px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+}
+
+.step-card svg,
+.use-case-card svg,
+.pillar-grid svg {
+  color: var(--teal);
+}
+
+.step-card h3,
+.use-case-card h3,
+.formula-card h3,
+.demo-columns h3 {
+  margin: 0 0 8px;
+  font-size: 1.04rem;
+}
+
+.step-card p,
+.endpoint-list p,
+.use-case-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.demo-panel {
+  position: sticky;
+  top: 22px;
+  padding: 20px;
+}
+
+.segmented-control {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+  padding: 6px;
+  border-radius: 8px;
+  background: var(--mist);
+}
+
+.segmented-control button,
+.pricing-card button {
+  min-height: 38px;
+  border: 0;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.segmented-control button {
+  background: transparent;
+  color: var(--muted);
+}
+
+.segmented-control button[aria-selected="true"] {
+  background: var(--white);
+  color: var(--ink);
+  box-shadow: 0 6px 18px rgba(16, 32, 39, 0.1);
+}
+
+.demo-score {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin: 24px 0;
+}
+
+.demo-score strong {
+  font-size: 3rem;
+  line-height: 0.9;
+}
+
+.demo-bars {
+  display: grid;
+  gap: 14px;
+}
+
+.demo-bars label {
+  display: grid;
+  grid-template-columns: 112px 1fr;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.demo-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 22px;
+}
+
+.demo-columns div {
+  padding: 14px;
+  border-radius: 8px;
+  background: #f6faf8;
+}
+
+.demo-columns h3 {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.demo-columns p {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.demo-panel footer {
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+  color: var(--ink);
+  font-weight: 800;
+}
+
+.evidence-grid,
+.ucg-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 20px;
+}
+
+.transfer-board,
+.layers-table,
+.pillar-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.transfer-row,
+.layers-table div,
+.endpoint-list article,
+.use-case-card,
+.addon {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+}
+
+.transfer-row {
+  display: grid;
+  grid-template-columns: 1fr 74px;
+  gap: 10px;
+  padding: 16px;
+}
+
+.transfer-row div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.transfer-row b {
+  text-align: right;
+  color: var(--teal);
+  font-size: 1.3rem;
+}
+
+.transfer-row span {
+  grid-column: 1 / -1;
+  color: var(--muted);
+}
+
+.formula-card,
+.code-window,
+.pricing-card {
+  padding: 20px;
+}
+
+.formula-row {
+  grid-template-columns: 122px 1fr 44px;
+  margin-top: 16px;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.formula-card p {
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.ucg-grid {
+  margin-top: 20px;
+}
+
+.layers-table div {
+  display: grid;
+  grid-template-columns: 46px 120px 1fr;
+  gap: 12px;
+  align-items: center;
+  padding: 14px;
+}
+
+.layers-table strong {
+  color: var(--blue);
+}
+
+.layers-table p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.pillar-grid {
+  grid-template-columns: 1fr 1fr;
+}
+
+.pillar-grid span {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #f8fbf9;
+  font-weight: 800;
+}
+
+.api-layout {
+  align-items: center;
+}
+
+.endpoint-list {
+  grid-template-columns: 1fr 1fr;
+}
+
+.endpoint-list article {
+  padding: 16px;
+}
+
+.code-window {
+  background: var(--charcoal);
+  color: #dfeee9;
+}
+
+.code-window pre {
+  overflow-x: auto;
+  margin: 22px 0 0;
+  color: #f4faf8;
+  font-family: "Courier New", monospace;
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
+.use-case-grid,
+.pricing-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.use-case-card {
+  padding: 20px;
+}
+
+.pricing-grid {
+  grid-template-columns: repeat(3, 1fr);
+  align-items: stretch;
+}
+
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.pricing-card.featured {
+  border-color: rgba(17, 133, 111, 0.55);
+  transform: translateY(-10px);
+}
+
+.pricing-card.selected {
+  outline: 3px solid rgba(17, 133, 111, 0.2);
+}
+
+.plan-top {
+  align-items: baseline;
+}
+
+.plan-top span {
+  color: var(--teal);
+  font-weight: 900;
+}
+
+.plan-top strong {
+  font-size: 2.25rem;
+}
+
+.pricing-card p {
+  min-height: 54px;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.pricing-card button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: var(--charcoal);
+  color: var(--white);
+}
+
+.pricing-card ul {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pricing-card li {
+  display: flex;
+  gap: 9px;
+  color: var(--muted);
+  line-height: 1.35;
+}
+
+.pricing-card li svg {
+  flex: 0 0 auto;
+  color: var(--teal);
+}
+
+.addon {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+  padding: 18px;
+}
+
+.addon span {
+  color: var(--muted);
+}
+
+.cta-band {
+  padding: 74px 0;
+  background: var(--teal);
+  color: var(--white);
+}
+
+.cta-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.cta-content div {
+  max-width: 760px;
+}
+
+.cta-content span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 800;
+}
+
+.cta-content p {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.footer {
+  padding: 26px 0;
+  background: var(--charcoal);
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.footer .shell {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer strong {
+  color: var(--white);
+}
